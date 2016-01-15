@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Registration</title>
+</head>
+
+<body>
+<t1>Please type your username and password</t1>
+<form action="/registration" method="POST">
+    
+    <p>Username: <input type="text" name="username" /><p>
+    <p>Password: <input type="password" name="password" /><p>
+    <p><input type="submit" value="Registrate" /></p>
+    {% module xsrf_form_html() %}
+
+</form>
+</body>
+</html>
