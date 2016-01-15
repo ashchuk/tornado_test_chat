@@ -1,1 +1,8 @@
-
+<table id = "messagestring">
+	<tr>
+		<td id="col1"><div class="message" id="m{{ message["id"] }}">{% module linkify(message["body"]) %}</div></td>
+		<td id="col2"><div class="message" id="m{{ message["id"] }}">{% module linkify(message["user"]) %}</div></td>
+		<td id="col2"><div class="message" id="m{{ message["id"] }}">{% module linkify(message["time"]) %}</div></td>
+		<td id="col2"><div class="message" id="m{{ message["id"] }}">{% module linkify(message["date"]) %}</div></td>
+	</tr>
+</table>
